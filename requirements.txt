@@ -1,0 +1,12 @@
+mss==6.1.0
+opencv_python==4.5.3.56
+matplotlib==3.3.4
+numpy==1.19.5
+onnx==1.10.2
+onnx_tf==1.9.0
+Pillow==8.4.0
+PyQt5==5.15.6
+qdarkstyle==3.0.2
+tensorflow==2.7.0
+torch==1.10.0
+torchvision==0.11.1

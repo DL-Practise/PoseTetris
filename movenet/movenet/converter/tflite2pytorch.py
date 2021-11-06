@@ -27,7 +27,6 @@ def to_torch_name(name):
 
 def load_variables(chkpoint, base_dir=BASE_DIR):
     files = [f for f in os.listdir(base_dir)]
-
     state_dict = {}
     for filename in files:
         if filename[-4:] != '.npy':
@@ -65,6 +64,6 @@ def convert(model_id, model_dir, image_size=192, check=True):
         os.makedirs(model_dir)
 
     state_dict = load_variables(checkpoint_name)
-
+    print('---> save')
     checkpoint_path = os.path.join(model_dir, checkpoint_name) + '.pth'
     torch.save(state_dict, checkpoint_path)

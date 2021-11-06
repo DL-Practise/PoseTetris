@@ -13,7 +13,7 @@ heads = {'hm': 1, 'hps': 34, 'hm_hp': 17, 'hp_offset': 34}
 def load_model(model_id, output_stride=4, model_dir=MODEL_DIR):
     assert model_id == 'movenet', 'The model name should be movenet'
     assert output_stride == 4, 'The current model only support output stride being 4.'
-    model_path = os.path.join(model_dir, model_id + '.pth')
+    model_path = os.path.join(model_dir, model_id + '.pkl')
     if not os.path.exists(model_path):
         print('Cannot find models file %s, converting from tflite weights...' % model_path)
         from movenet.converter.tflite2pytorch import convert

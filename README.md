@@ -13,7 +13,7 @@ https://github.com/DL-Practise/PoseTetris
   
 ## 3.安装依赖环境  
 进入到PoseTeris的根目录，打开命令行（powershell）  
-执行pip install -r requirment.txt  
+执行 pip install -r requirements.txt
 
 ## 4.启动PoseTetris
 进入到PoseTeris的根目录，打开命令行（powershell），执行python main_widget.py 启动程序  
